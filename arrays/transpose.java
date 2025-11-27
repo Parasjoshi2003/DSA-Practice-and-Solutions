@@ -1,4 +1,4 @@
-package practice;
+package arrays;
 
 public class transpose {
     static void swap(int arr[][], int i, int j){

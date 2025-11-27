@@ -1,4 +1,4 @@
-package practice.leetcodeProblems;
+package leetcode;
 
 public class firstAndLastOccurence {
     public static String searchRange(int[]nums,int target){
