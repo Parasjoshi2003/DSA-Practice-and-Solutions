@@ -25,11 +25,8 @@ public class spiralMatrix {
                 li.add(matrix[i][l]);
             }
             l++;
-//
         }
-
         return li;
-
     }
 
     public static void main(String[] args) {
