@@ -2,7 +2,7 @@ package binaryTree;
 import javax.print.attribute.standard.SheetCollate;
 import java.util.*;
 public class basics {
-    static class Node{
+    public static class Node{
         int data;
         Node left;
         Node right;
@@ -19,6 +19,7 @@ public class basics {
             idx++;
             if(nodes[idx] == -1){
                 return null;
+
             }
             Node newNode = new Node(nodes[idx]);
             newNode.left = buildTree(nodes);
@@ -26,7 +27,7 @@ public class basics {
             return newNode;
         }
 
-         private static void preorder(Node root){
+         public static void preorder(Node root){
             if(root == null) return ;
             System.out.print(root.data + " ");
              preorder(root.left);
@@ -181,9 +182,9 @@ public class basics {
     public static void main(String[] args) {
 //        int nodes[] = {1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
         int nodes[] = {1,2,4,-1,-1,5,-1,-1,3,-1,-1};
-        BinaryTree b = new BinaryTree();
-        Node root = b.buildTree(nodes);
+//        BinaryTree b = new BinaryTree();
+//        Node root = b.buildTree(nodes);
 //        System.out.println(BinaryTree.idx);
-        ArrayList<Integer> list = b.topView(root);
+//        ArrayList<Integer> list = b.topView(root);
     }
 }
